@@ -1,6 +1,6 @@
 ''' Default '''
-DATASET = "cracktile"
-IMG_PROCESSING = "cracktile"
+DATASET = "Dataset"
+IMG_PROCESSING = "Dataset"
 MODEL = "unet"
 
 IMAGE_SIZE = (256,256,1)
