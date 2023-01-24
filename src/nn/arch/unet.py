@@ -1,5 +1,5 @@
-from keras.models import Input
-from keras.engine.training import Model
+from keras.layers import Input
+from keras.models import Model
 from keras.layers import Conv2D, MaxPooling2D, Dropout, UpSampling2D, Concatenate
 from keras.optimizers import Adam
 import numpy as np
