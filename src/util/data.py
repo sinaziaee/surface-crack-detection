@@ -6,7 +6,7 @@ import cv2
 
 def fetch_from_path(images):
     image_list = sorted(glob(path.join(images, const.FILTER)))
-    image = np.array([cv2.imread(item, 1) for item in image_list])
+    image = np.array([cv2.imread(item, 0) for item in image_list])
     return image
 
 def fetch_from_paths(images, labels):
@@ -22,8 +22,8 @@ def fetch_from_paths(images, labels):
             image_list.append(i)
             label_list.append(l)
 
-    image = np.array([cv2.imread(item, 1) for item in image_list])
-    label = np.array([cv2.imread(item, 1) for item in label_list])
+    image = np.array([cv2.imread(item, 0) for item in image_list])
+    label = np.array([cv2.imread(item, 0) for item in label_list])
     return image, label
 
 def length_from_path(file_dir, *dirs):
